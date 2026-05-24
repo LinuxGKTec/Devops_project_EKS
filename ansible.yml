@@ -1,0 +1,7 @@
+- hosts: eks_mgt
+  #become: true
+  tasks: 
+  #- name: delete old deployment and service
+  #  command: kubectl delete -f /home/ubuntu/k8s_deploy.yml
+  - name: create new deployment and service
+    command: kubectl apply -f /home/ubuntu/k8s_deploy.yml
